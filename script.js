@@ -8,11 +8,11 @@ function hanteraInput(e) {
   const namn = e.target.name;
 
   if (namn === "content") {
-    div.innerHTML = e.target.value;    // Om det är fältet med name="content", skriv värdet i div-elementet
+    div.innerHTML = e.target.value;    
   }
 }
 
-textfields.forEach(fält => fält.addEventListener("input", hanteraInput));
+textfields.forEach(field => field.addEventListener("input", hanteraInput));
 
 checkbox.addEventListener("change", function () {
 
@@ -22,8 +22,8 @@ checkbox.addEventListener("change", function () {
 });
 
 
-textfields.forEach(fält => {
-  fält.addEventListener("input", hanteraInput);
+textfields.forEach(field => {
+  field.addEventListener("input", hanteraInput);
 });
 
 
